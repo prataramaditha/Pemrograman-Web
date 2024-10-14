@@ -1,0 +1,42 @@
+<html></html>
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+</head>
+<body class="bg-beige flex items-center justify-center min-h-screen">
+    <div class="bg-green-700 p-8 rounded-lg shadow-lg">
+        <h2 class="text-center text-white text-xl mb-4">Form Pendaftaran</h2>
+        <form id="registrationForm" class="space-y-4">
+            <div>
+                <label for="name" class="block text-white">Nama</label>
+                <input type="text" id="name" class="w-full p-2 rounded border border-gray-300">
+            </div>
+            <div>
+                <label for="email" class="block text-white">Email</label>
+                <input type="email" id="email" class="w-full p-2 rounded border border-gray-300">
+            </div>
+            <div>
+                <label for="address" class="block text-white">Alamat Lengkap</label>
+                <input type="text" id="address" class="w-full p-2 rounded border border-gray-300">
+            </div>
+            <button type="button" onclick="validateForm()" class="w-full bg-black text-white p-2 rounded">Daftar</button>
+        </form>
+    </div>
+
+    <script>
+        function validateForm() {
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var address = document.getElementById('address').value;
+
+            if (name === "" || email === "" || address === "") {
+                alert("Semua data harus diisi.");
+            }
+        }
+    </script>
+
+    <div class="absolute bottom-0 left-0 w-full text-center p-4">
+        <p class="text-black">Note : Menampilkan alert ketika user menginputkan data kosong</p>
+    </div>
+</body>
+</html>
