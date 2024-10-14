@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;800&display=swap');
+/*menghilangkan ukuran default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: url('https://cdn.animaapp.com/projects/66fa8bf97ec76b748c7740a1/releases/66fa8c30de7a7fb3f60453ec/img/pexels-konevi-2291789-1.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.header {
+    background-color: rgba(240, 230, 140, 0.8);
+    padding: 20px;
+}
+
+.title {
+    font-size: 64px;
+    font-weight: 800;
+    color: #000;
+}
+
+nav a {
+    font-size: 24px;
+    font-weight: 800;
+    color: #000;
+    text-decoration: none;
+}
+
+.main {
+    padding: 20px;
+}
+
+.quote-section {
+    background-color: rgba(245, 245, 220, 0.8);
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 33px;
+    
+}
+
+.quote {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.description {
+    background-color: rgba(245, 245, 220, 0.8);
+    padding: 30px;
+    border-radius: 52px;
+}
+
+footer {
+    background-color: rgba(245, 245, 220, 0.8);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 40px;
+    font-weight: 800;
+}
